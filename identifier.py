@@ -239,3 +239,9 @@ plot_confusion_matrix(cm, classes=['FAKE', 'REAL'], title="Confusion Matrix - St
 plt.show()
 '''
 
+import joblib
+
+# Save the TF-IDF Vectorizer and the models
+joblib.dump(cv, 'tfidf_vectorizer.pkl')
+joblib.dump(nb_classifier, 'nb_model.pkl')
+joblib.dump(pac_classifier, 'pac_model.pkl')
