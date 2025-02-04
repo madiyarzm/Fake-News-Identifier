@@ -19,7 +19,7 @@ def predict_fake_news(text):
     prob_nb = nb_classifier.predict_proba(text_tfidf)[:, 1]  
     score_pac = pac_classifier.decision_function(text_tfidf)
 
-    # Weighted Voting
+    # Weighted Voting 
     weight_nb = 0.65
     weight_pac = 0.35
     final_score = (weight_nb * prob_nb) + (weight_pac * score_pac)
