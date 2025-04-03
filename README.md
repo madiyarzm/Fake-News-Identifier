@@ -48,19 +48,25 @@ Leverages cutting-edge natural language processing (NLP) techniques and machine 
 ---
 
 ## 🎯 Accuracy  
-- **Naive Bayes:** ~88%
-![MB Naive bayes accuracy](https://github.com/user-attachments/assets/f3f32a73-db8b-4e5c-a2c8-232b53d090e7)
-  
-- **Passive-Aggressive:** ~92.5% 
-<img width="649" alt="PassiveAggressiveClassifier accuracy" src="https://github.com/user-attachments/assets/06f410e4-0cca-4906-92ca-7f666a562154" />
-   
-- **Ensemble (Weighted Voting):** Highest balanced accuracy
-![Weighted Voting (Bayes + PAC) accuracy](https://github.com/user-attachments/assets/91fcaacb-5b6d-4176-ad2d-40946df2843e)
-
--Logistic Regression (Naive Bayes + Passive Aggresive Classifier)
-![Logistic Regression (Naive Bayes + PAC stacking)](https://github.com/user-attachments/assets/840c747c-e0c2-4ba1-9068-ceaa870e2052)
+Here's your updated `README.md` section with the accuracy visuals and performance descriptions placed properly:
 
 ---
+
+## 🎯 Accuracy & Model Performance
+
+- **Naive Bayes:** ~88%  
+  ![Naive Bayes Accuracy](https://github.com/user-attachments/assets/f3f32a73-db8b-4e5c-a2c8-232b53d090e7)
+
+- **Passive-Aggressive Classifier:** ~92.5%  
+  <img width="649" alt="PassiveAggressiveClassifier accuracy" src="https://github.com/user-attachments/assets/06f410e4-0cca-4906-92ca-7f666a562154" />
+
+- **Ensemble (Weighted Voting: NB + PAC):**  
+  Achieves the **highest balanced accuracy**, combining probabilistic and confidence-based prediction strengths.  
+  ![Weighted Voting (Bayes + PAC) accuracy](https://github.com/user-attachments/assets/91fcaacb-5b6d-4176-ad2d-40946df2843e)
+
+- **Stacking (Logistic Regression on NB + PAC):**  
+  Slight accuracy improvement, but introduces more false negatives — not optimal for misinformation detection goals.  
+  ![Logistic Regression (Naive Bayes + PAC stacking)](https://github.com/user-attachments/assets/840c747c-e0c2-4ba1-9068-ceaa870e2052)
 
 ## 📦 Requirements  
 Install dependencies using:
